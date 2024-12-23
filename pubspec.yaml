@@ -39,6 +39,7 @@ dependencies:
   provider: ^6.1.2
   # Network
   dio: ^5.7.0
+  # icons
   flutter_feather_icons: ^2.0.0+1
   
 
@@ -52,6 +53,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
+  
   # dart run package_rename
   package_rename: ^1.8.0
   # dart run flutter_launcher_icons
@@ -60,7 +62,7 @@ dev_dependencies:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/image/icon-app.png"
+  image_path: "assets/image/icon-app.png" # ganti path ini
   min_sdk_android: 21 # android min sdk min:16, default 21
   # web:
   #   generate: true
@@ -78,14 +80,13 @@ flutter_launcher_icons:
 package_rename_config:
   android:
     app_name: Training Mob
-    package_name: com.training.mob
-    override_old_package: com.example.myapp
-    # lang: kotlin
+    package_name: com.training.mob # package name baru
+    override_old_package: com.example.myapp # package name lama cek di android/app/build.gradle
 
   ios:
     app_name: Training Mob
     bundle_name: trainingmob
-    package_name: com.training.mob
+    package_name: com.training.mob #samakan dgn yang di android
 
   # web:
   #   app_name: Package Rename Demo
